@@ -2,7 +2,7 @@ specVersion: 1.0.0
 indexerHints:
   prune: auto
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: Token
@@ -20,11 +20,10 @@ dataSources:
         - User
       abis:
         - name: Token
-          file: ./abis/Token.json
+          file: Token/abis/Token.json
       eventHandlers:
         - event: TokenIPFSPathUpdated(indexed uint256,indexed string,string)
           handler: handleTokenIPFSPathUpdated
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
-
-      file: ./src/token.ts
+      file: Token/Token.wasm
