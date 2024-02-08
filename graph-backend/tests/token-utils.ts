@@ -1,20 +1,20 @@
-import { newMockEvent } from "matchstick-as"
-import { ethereum, Address, BigInt } from "@graphprotocol/graph-ts"
+import {newMockEvent} from "matchstick-as"
+import {Address, BigInt, ethereum} from "@graphprotocol/graph-ts"
 import {
-  Approval,
-  ApprovalForAll,
-  BaseURIUpdated,
-  Minted,
-  NFTCreatorMigrated,
-  NFTMarketUpdated,
-  NFTMetadataUpdated,
-  NFTOwnerMigrated,
-  PaymentAddressMigrated,
-  ProxyCallContractUpdated,
-  TokenCreatorPaymentAddressSet,
-  TokenCreatorUpdated,
-  TokenIPFSPathUpdated,
-  Transfer
+    Approval,
+    ApprovalForAll,
+    BaseURIUpdated,
+    Minted,
+    NFTCreatorMigrated,
+    NFTMarketUpdated,
+    NFTMetadataUpdated,
+    NFTOwnerMigrated,
+    PaymentAddressMigrated,
+    ProxyCallContractUpdated,
+    TokenCreatorPaymentAddressSet,
+    TokenCreatorUpdated,
+    TokenIPFSPathUpdated,
+    Transfer
 } from "../generated/Token/Token"
 
 export function createApprovalEvent(
