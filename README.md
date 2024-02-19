@@ -1,4 +1,4 @@
-# Blockchain Query and API Development Kit
+# Blockchain Query and API Development With The Graph
 
 Welcome to our project, a comprehensive toolkit designed for developers interested in querying blockchain data and
 building their own distributed applications with ease. This project utilizes The Graph, a powerful protocol for indexing
